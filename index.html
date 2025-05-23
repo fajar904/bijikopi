@@ -1,56 +1,146 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BijiKopi.ID – Varian Kopi Nusantara</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Landing Page Jualan Biji Kopi - Fajar Bayu Anggara</title>
     <style>
-        body { font-family: sans-serif; background: #f3f2ef; margin: 0; padding: 0; color: #333; }
-        header { background-color: #4e342e; color: white; padding: 2em 1em; text-align: center; }
-        .hero-img { width: 100%; max-height: 400px; object-fit: cover; }
-        main { padding: 2em; text-align: center; }
-        .cta button { background-color: #6d4c41; color: white; border: none; padding: 1em 2em;
-                      font-size: 1em; cursor: pointer; margin: 0 1em; border-radius: 5px; }
-        .product-img { width: 120px; border-radius: 8px; margin-bottom: 0.5em; }
-        footer { background-color: #222; color: white; padding: 1em; text-align: center; font-size: 0.9em; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #6f4c3e;
+        }
+        h2 {
+            color: #8d6e63;
+            margin-bottom: 1rem;
+        }
+        p {
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        .cta-button {
+            background-color: #6f4c3e;
+            color: white;
+            padding: 12px 28px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: inline-block;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #5b3e30;
+        }
+        .varian {
+            margin: 30px 0 20px 0;
+            text-align: left;
+        }
+        .varian h3 {
+            margin-bottom: 15px;
+            color: #6f4c3e;
+        }
+        .varian-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            list-style-type: none;
+            padding: 0;
+        }
+        .varian-item {
+            background-color: #faf6f0;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(111, 76, 62, 0.2);
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s ease;
+        }
+        .varian-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(111, 76, 62, 0.3);
+        }
+        .varian-item img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 12px;
+        }
+        .varian-item strong {
+            color: #6f4c3e;
+            font-size: 1.1rem;
+            margin-bottom: 6px;
+            text-align: center;
+        }
+        footer {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #6f4c3e;
+        }
+        .nim-nama {
+            margin-top: 25px;
+            font-weight: 600;
+            color: #6f4c3e;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>BijiKopi.ID</h1>
-        <p class="subheading">Jelajahi Varian Biji Kopi Terbaik dari Nusantara</p>
-    </header>
+    <div class="container">
+        <h1>Selamat Datang di Toko Biji Kopi Fajar Bayu Anggara!</h1>
+        <h2>Nikmati Beragam Varian Biji Kopi Pilihan Berkualitas Tinggi</h2>
+        <p>Kami menawarkan berbagai varian biji kopi dari berbagai daerah di Indonesia. Setiap biji kopi kami dipilih dengan cermat untuk memberikan cita rasa yang unik dan memuaskan. Temukan kopi favorit Anda dan nikmati pengalaman ngopi yang tak terlupakan!</p>
+        
+        <section class="varian">
+            <h3>Varian Biji Kopi:</h3>
+            <ul class="varian-list">
+                <li class="varian-item">
+                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Kopi Arabika" />
+                    <strong>Kopi Arabika</strong>
+                    <p>Rasa halus dengan aroma yang kuat dan penuh karakter.</p>
+                </li>
+                <li class="varian-item">
+                    <img src="https://images.unsplash.com/photo-1486299267072-68c04ea57a94?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Kopi Robusta" />
+                    <strong>Kopi Robusta</strong>
+                    <p>Rasa kuat dan kadar kafein lebih tinggi cocok untuk pecinta kopi tebal.</p>
+                </li>
+                <li class="varian-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Coffee_Liberica.jpg/800px-Coffee_Liberica.jpg" alt="Kopi Liberika" />
+                    <strong>Kopi Liberika</strong>
+                    <p>Cita rasa unik dengan aroma khas dan tekstur pekat.</p>
+                </li>
+                <li class="varian-item">
+                    <img src="https://images.unsplash.com/photo-1556888205-8f344f3c7ef3?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Kopi Excelsa" />
+                    <strong>Kopi Excelsa</strong>
+                    <p>Rasa buah dan asam yang menyegarkan memberikan pengalaman berbeda.</p>
+                </li>
+            </ul>
+        </section>
 
-    <img src="https://picsum.photos/id/1080/1200/400" alt="Biji Kopi Hero" class="hero-img">
+        <a href="mailto:fajar.bayu@example.com" class="cta-button">Pesan Sekarang dan Dapatkan Diskon 10%</a>
 
-    <main>
-        <div class="cta">
-            <button>Lihat Semua Varian</button>
-            <button>Hubungi Kami via WA</button>
+        <div class="nim-nama">
+            <p><strong>NIM:</strong> 22.11.4643</p>
+            <p><strong>Nama:</strong> Fajar Bayu Anggara</p>
         </div>
-
-        <h2>Produk Unggulan</h2>
-        <div>
-            <img src="https://picsum.photos/id/1060/200/150" alt="Arabika Gayo" class="product-img"><br>
-            Arabika Gayo – Aceh
-        </div>
-        <div>
-            <img src="https://picsum.photos/id/1062/200/150" alt="Robusta Temanggung" class="product-img"><br>
-            Robusta Temanggung – Jawa Tengah
-        </div>
-        <div>
-            <img src="https://picsum.photos/id/1063/200/150" alt="Kopi Kintamani" class="product-img"><br>
-            Kopi Kintamani – Bali
-        </div>
-        <div>
-            <img src="https://picsum.photos/id/1064/200/150" alt="Kopi Toraja" class="product-img"><br>
-            Kopi Toraja – Sulawesi Selatan
-        </div>
-    </main>
-
+    </div>
     <footer>
-        NIM: 22.11.4643 – Fajar Bayu Anggara | BijiKopi.ID
+        &copy; 2024 Fajar Bayu Anggara - Semua hak cipta dilindungi.
     </footer>
 </body>
 </html>
